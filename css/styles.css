@@ -85,7 +85,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
 }
 
 .header__texto {
@@ -99,7 +99,8 @@ img {
         margin-top: 20rem;
         font-size: 2.3rem;
     }
-    .header__texto h2{
+
+    .header__texto h2 {
         font-size: 5rem;
     }
 }
@@ -227,10 +228,64 @@ img {
 .widget-curso__info {}
 
 /* FOOTER */
-.footer{
+.footer {
     background-color: var(--colorNegro);
     margin-top: 4rem;
 }
+
+
+
+/* SOBRE NOSOTROS */
+.sobre-nosotros {
+
+}
+
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 10rem;
+    }
+}
+
+.sobre-nosotros__imagen img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .sobre-nosotros__texto p {
+        line-height: 2;
+    }
+}
+
+/* CURSO */
+
+.curso{
+    border-bottom: 2px solid var(--colorGris);
+    margin-bottom: 2rem;
+}
+
+.curso:last-of-type{
+    border: none;
+    margin:0;
+}
 @media (min-width: 768px){
-    
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        
+    }
+}
+
+.curso__label {
+    font-weight: bold;
+    font-family: var(--fuenteHeading);
+}
+.curso__info{
+    font-weight: 400;
 }

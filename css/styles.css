@@ -236,9 +236,7 @@ img {
 
 
 /* SOBRE NOSOTROS */
-.sobre-nosotros {
-
-}
+.sobre-nosotros {}
 
 
 @media (min-width: 768px) {
@@ -264,21 +262,22 @@ img {
 
 /* CURSO */
 
-.curso{
+.curso {
     border-bottom: 2px solid var(--colorGris);
     margin-bottom: 2rem;
 }
 
-.curso:last-of-type{
+.curso:last-of-type {
     border: none;
-    margin:0;
+    margin: 0;
 }
-@media (min-width: 768px){
-    .curso{
+
+@media (min-width: 768px) {
+    .curso {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 2rem;
-        
+
     }
 }
 
@@ -286,6 +285,19 @@ img {
     font-weight: bold;
     font-family: var(--fuenteHeading);
 }
-.curso__info{
+
+.curso__info {
     font-weight: 400;
+}
+
+/* ENTRADA HTML */
+@media (min-width: 768px) {
+
+    .entrada1,
+    .entrada2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
 }
